@@ -2,7 +2,9 @@ import os
 import shutil  
 import glob  
 import re  
+
 ClassMap={1: 'airplane', 2: 'ship', 3: 'storage tank', 4: 'baseball diamond', 5: 'tennis court', 6: 'basketball court', 7: 'ground track field', 8: 'harbor', 9: 'bridge', 10: 'vehicle'}
+
 def extract_numbers_from_line(line):  
     numbers = re.findall(r'\d+', line)  
     return numbers  
